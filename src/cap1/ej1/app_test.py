@@ -1,11 +1,11 @@
-from app import calculate_sum
+from src.cap1.ej1.app import calculate_sum
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
 
 
 def test_user_interface():
-    driver_path = r'../chromedriver'
+    driver_path = r'../../../../chromedriver'
     options = Options()
     options.add_argument('--headless')
     with webdriver.Chrome(driver_path,chrome_options=options) as driver:
